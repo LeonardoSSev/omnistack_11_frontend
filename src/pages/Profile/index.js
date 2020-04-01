@@ -49,7 +49,7 @@ export default function Profile() {
             <p>{ incident.description }</p>
 
             <strong>VALOR:</strong>
-            <p>{ `R${incident.value}` }</p>
+            <p>{ Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(incident.value) }</p>
 
             <button type="button">
               <FiTrash2 size={20} color="#A8A8B3"/>
