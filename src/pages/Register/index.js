@@ -8,7 +8,7 @@ import './styles.css';
 
 export default function Register() {
   return (
-    <h1 className="register-container">
+    <div className="register-container">
       <div className="content">
         <section>
           <img src={logoImg} alt="Be the Hero"/>
@@ -35,6 +35,6 @@ export default function Register() {
           <button className="button" type="submit">Cadastrar</button>
         </form>
       </div>
-    </h1>
+    </div>
   )
 };
